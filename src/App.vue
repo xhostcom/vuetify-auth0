@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="secondary"
       dark
     >
       <div class="d-flex align-center">
@@ -54,8 +54,10 @@
 
 export default {
   name: 'App',
-  data: () => ({
-    //
-  }),
+  data () {
+    return {
+    clientId: process.env.VUE_APP_AUTH0_CONFIG_CLIENTID
+  }
+  }
 };
 </script>
