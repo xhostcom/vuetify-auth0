@@ -5,7 +5,7 @@
       color="secondary"
       dark
     >
-      <div class="d-flex align-center">
+     <div class="d-flex align-center">
         <v-img
           alt="Logo"
           class="shrink mr-2"
@@ -14,16 +14,15 @@
           transition="scale-transition"
           width="40"
         />
-
-      </div>
+       </div>
        <v-spacer></v-spacer>
        <v-btn to="/">Home</v-btn>
        <v-btn to="/about">About</v-btn>
-       <v-btn to="/contact" >Contact </v-btn>
+       <v-btn to="/contact">Contact </v-btn>
        <v-btn to="/members">Members</v-btn>
-      <v-btn @click="logOut">Logout</v-btn>
-    </v-app-bar>
-     <v-content>
+      <v-btn to="logout" @click="logOut">Logout</v-btn>
+      </v-app-bar>
+      <v-content>
       <router-view></router-view>
     </v-content>
   </v-app>
@@ -41,6 +40,9 @@ export default {
   methods: {
     logOut() {
       console.log('Logging Out');
+    },
+     logIn() {
+      console.log('Logging In');
     }
   }
 };

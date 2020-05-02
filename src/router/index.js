@@ -27,7 +27,8 @@ Vue.use(VueRouter)
   {
     path: '/members',
     name: 'Members',
-    component: () => import('../views/Members.vue')
+    component: () => import('../views/Members.vue'),
+    meta: { requireAuth: true }
   }
 ]
 

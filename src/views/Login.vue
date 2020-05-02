@@ -11,12 +11,14 @@
                 <v-card-title primary-title>
                   <div>
                     <h3 class="headline mb-0">Welcome</h3>
-                    <div>Welcome to My Application.
+                    <div>Welcome to My Application.                          
                       <br><br>
-                      Login to connect.
+                      Login to connect. 
                       <br><br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
+
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+                    </div>
                   </div>
                 </v-card-title>
                 <v-card-actions>
@@ -31,16 +33,13 @@
 </template>
 <script>
 export default {
- name: 'Login',
+    name: 'Login',
     methods: {
         auth0Login(){
-            //this.$store.dispatch('auth0Login');
-           console.log('we are in auth0Login');
+            this.$store.dispatch('auth0Login');
+
+            console.log('we are in auth0Login');
         },
     },
-}
+    }
 </script>
-
-<style>
-
-</style>
