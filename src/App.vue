@@ -16,33 +16,12 @@
         />
 
       </div>
-
-      <v-spacer></v-spacer>
-        <v-btn
-        to="/"
-        text
-      >
-        Home
-      </v-btn>
-       <v-btn
-       to="/about"
-        text
-      >
-        About
-      </v-btn>
-       <v-btn
-       to="/contact"
-        text
-      >
-        Contact
-      </v-btn>
-
-      <v-btn
-       to="/members"
-        text
-      >
-        Members
-      </v-btn>
+       <v-spacer></v-spacer>
+       <v-btn to="/">Home</v-btn>
+       <v-btn to="/about">About</v-btn>
+       <v-btn to="/contact" >Contact </v-btn>
+       <v-btn to="/members">Members</v-btn>
+      <v-btn @click="logOut">Logout</v-btn>
     </v-app-bar>
      <v-content>
       <router-view></router-view>
@@ -58,6 +37,11 @@ export default {
     return {
     clientId: process.env.VUE_APP_AUTH0_CONFIG_CLIENTID
   }
+  },
+  methods: {
+    logOut() {
+      console.log('Logging Out');
+    }
   }
 };
 </script>
