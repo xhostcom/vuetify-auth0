@@ -1,12 +1,3 @@
 <template>
-  <div class="home">
-   <h2>Auth0 App</h2>
- 
-  </div>
+    <h1>This is a home page</h1>
 </template>
-<script>
-// @ is an alias to /src
-export default {
-  name: 'Home'
-}
-</script>
