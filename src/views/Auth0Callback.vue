@@ -10,7 +10,6 @@
     name: 'Auth0Callback',
     data () {
       return {
-          
       }
     },
   }
